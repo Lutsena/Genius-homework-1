@@ -1,5 +1,55 @@
+:root {
+  --brand-color: #2b7fff;
+  --primary-color-dark: #011c44;
+  --color-primary-light: #fff;
+}
+
+/* BASE */
+ul {
+  list-style-type: none;
+}
+
+body {
+  color: var(--primary-color-dark);
+}
+
+/* H-title */
+.hero-title {
+  color: var(--brand-color);
+}
+
+.accent {
+  color: var(--brand-color);
+}
+
+.second-title {
+  color: var(--primary-color-dark);
+}
+
+.third-title {
+  color: var(--primary-color-dark);
+}
+
+/* BUTTON */
 .button {
-  background: #2b7fff;
+  background-color: var(--brand-color);
   border-radius: 32px;
-  color: #fff;
+  color: var(--color-primary-light);
+  border: solid 2px var(--color-primary-light);
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid var(--brand-color);
+  border-radius: 32px;
+  color: var(--primary-color-dark);
+}
+
+/* LINK IN THE HEADER AND FOOTER */
+.navigation {
+  color: var(--brand-color);
+}
+
+.navigation:hover {
+  color: var(--primary-color-dark);
 }
