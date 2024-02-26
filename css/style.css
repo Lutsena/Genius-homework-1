@@ -1,7 +1,44 @@
+/* FONT */
+/* play-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* play-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
   --brand-color: #2b7fff;
   --primary-color-dark: #011c44;
   --color-primary-light: #fff;
+  --secondary-color-dark-text: #000000;
+  --secondary-color-subtext: #4a4a4a;
+  --secondary-color-protected-data: #747272;
 }
 
 /* BASE */
@@ -11,45 +48,142 @@ ul {
 
 body {
   color: var(--primary-color-dark);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
-/* H-title */
+address {
+  font-style: normal;
+}
+
+/* LINK IN THE HEADER AND FOOTER */
+.navigation {
+  color: var(--primary-color-dark);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.navigation:hover {
+  color: var(--brand-color);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-navigation {
+  color: var(--primary-color-dark);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.footer-navigation:hover {
+  color: var(--brand-color);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.protected-data {
+  color: var(--secondary-color-protected-data);
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+/* MAIN SECTION */
+.introduce {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .hero-title {
   color: var(--brand-color);
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.subtext {
+  color: var(--secondary-color-subtext);
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*DESCRIPTION-SECTION */
+
+.second-title {
+  color: var(--primary-color-dark);
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .accent {
   color: var(--brand-color);
 }
 
-.second-title {
-  color: var(--primary-color-dark);
+.description {
+  text-align: left;
 }
 
+.description-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* REASONS-SECTION */
+.reasons-text {
+  color: var(--secondary-color-dark-text);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+/* PROCEDURES-SECTION*/
 .third-title {
   color: var(--primary-color-dark);
+  color: var(--color-primary-light);
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
 }
 
+/*  */
+.contacts-text {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.18;
+  color: var(--color-primary-light);
+}
 /* BUTTON */
 .button {
   background-color: var(--brand-color);
   border-radius: 32px;
   color: var(--color-primary-light);
   border: solid 2px var(--color-primary-light);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .button:hover {
   background-color: transparent;
   border: 2px solid var(--brand-color);
   border-radius: 32px;
-  color: var(--primary-color-dark);
-}
-
-/* LINK IN THE HEADER AND FOOTER */
-.navigation {
-  color: var(--brand-color);
-}
-
-.navigation:hover {
   color: var(--primary-color-dark);
 }

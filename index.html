@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
+
+    <!-- Styles -->
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -36,29 +39,37 @@
 
     <main>
       <section>
-        <p>Косметологічна клініка</p>
+        <p class="introduce">Косметологічна клініка</p>
         <h1 class="hero-title" lang="en">Beauty Zone</h1>
         <button type="button" class="button">Замовити дзвінок</button>
-        <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+        <p class="subtext">
+          Запишись та отримай безкоштовну консультацію нашого косметолога
+        </p>
       </section>
+
       <section id="description-section">
-        <h2 class="second-title">
+        <h2 class="second-title description">
           Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
         </h2>
-        <p>
+        <p class="description-text">
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
         </p>
 
-        <p>
-          B <span lang="en">Beauty Zone</span> ми гарантуємо найвищі стандарти
-          якості та приємний сервіс. Наші косметологічні процедури та препарати
-          допоможуть вам підтримувати свою красу та молодість. З нами краса
-          назавжди!
+        <p class="description-text">
+          B <span class="brand" lang="en">Beauty Zone</span> ми гарантуємо
+          найвищі стандарти якості та приємний сервіс. Наші косметологічні
+          процедури та препарати допоможуть вам підтримувати свою красу та
+          молодість. З нами краса назавжди!
           <img src="./images/before.png" alt="Фото до процедури" />
-          <img src="./images/after.png" alt="Фото після процедури" />
+          <img
+            class="photoafter"
+            src="./images/after.png"
+            alt="Фото після процедури"
+          />
         </p>
       </section>
+
       <section id="reasons-section">
         <h2 class="second-title">
           Чому люди <span class="accent">обирають нас</span>
@@ -68,7 +79,7 @@
             src="./images/game-icons_materials-science.png"
             alt="Стікер атома"
           />
-          <p>
+          <p class="reasons-text">
             Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
             років
           </p>
@@ -78,19 +89,20 @@
             src="./images/medicinecosmeticsbottletreatment_109776 1.png"
             alt="Стікер засобів"
           />
-          <p>
+          <p class="reasons-text">
             Використовуємо тільки професійне обладнання та косметику, перевірену
             часом
           </p>
         </div>
         <div>
           <img src="./images/ph_crown-light.png" alt="Стікер корони" />
-          <p>
+          <p class="reasons-text">
             Наша мета - підкреслити переваги та приховати недоліки, а не
             переробити
           </p>
         </div>
       </section>
+
       <section id="procedures-section">
         <h2 class="second-title">Наші <span class="accent">процедури</span></h2>
         <article>
@@ -103,6 +115,7 @@
           <h3 class="third-title">Очищення обличчя</h3>
         </article>
       </section>
+
       <section id="contacts-section">
         <h2 class="second-title">Як нас <span class="accent">знайти</span></h2>
         <iframe
@@ -114,6 +127,10 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <p class="contacts-text">
+          Запишіться <span class="accent">безкоштовно</span> та отримайте
+          подарунок
+        </p>
       </section>
     </main>
 
@@ -121,26 +138,44 @@
       <nav>
         <a href=""><img src="./images/logo.png" alt="Website logo" /></a>
         <ul>
-          <li><a class="navigation" href="#description-section">Про нас</a></li>
-          <li><a class="navigation" href="#reasons-section">Чому ми</a></li>
           <li>
-            <a class="navigation" href="#procedures-section">Наші процедури</a>
+            <a class="footer-navigation" href="#description-section">Про нас</a>
           </li>
-          <li><a class="navigation" href="#contacts-section">Контакти</a></li>
+          <li>
+            <a class="footer-navigation" href="#reasons-section">Чому ми</a>
+          </li>
+          <li>
+            <a class="footer-navigation" href="#procedures-section"
+              >Наші процедури</a
+            >
+          </li>
+          <li>
+            <a class="footer-navigation" href="#contacts-section">Контакти</a>
+          </li>
         </ul>
       </nav>
 
       <address>
         <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>
-            <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <a class="footer-navigation" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/JLPru9cZsoa43fTq9" target="_blank"
+            <a class="footer-navigation" href="mailto:beautyzone@gmail.com"
+              >beautyzone@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer-navigation"
+              href="https://maps.app.goo.gl/JLPru9cZsoa43fTq9"
+              target="_blank"
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
+
           <li>
             <a href="tel:+380960000007">
               <img src="./images/phone.png" alt="Подзвонити" />
@@ -157,8 +192,10 @@
             </a>
           </li>
         </ul>
-        <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>&copy; 2022 Дані захищені</p>
+        <a class="footer-navigation" href="#" target="_blank"
+          >Політика конфіденційності</a
+        >
+        <p class="protected-data">&copy; 2022 Дані захищені</p>
       </address>
 
       <img src="./images/photoInTheFooter.png" alt="Баночка з сироваткою" />
