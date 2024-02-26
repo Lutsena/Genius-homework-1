@@ -60,7 +60,7 @@ address {
 /* LINK IN THE HEADER AND FOOTER */
 .navigation {
   color: var(--primary-color-dark);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
@@ -69,7 +69,7 @@ address {
 
 .navigation:hover {
   color: var(--brand-color);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
